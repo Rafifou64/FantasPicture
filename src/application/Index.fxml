@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.IndexController">
+   <children>
+      <Button fx:id="btnLogin" layoutX="287.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#Login" prefHeight="39.0" prefWidth="99.0" text="Se connecter" />
+      <Label layoutX="25.0" layoutY="325.0" text="Login" />
+      <Label layoutX="25.0" layoutY="360.0" text="Mot de passe" />
+      <TextField fx:id="login" layoutX="108.0" layoutY="321.0" />
+      <TextField fx:id="password" layoutX="108.0" layoutY="356.0" />
+      <ImageView fx:id="imageView" fitHeight="228.0" fitWidth="314.0" layoutX="272.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/assets/no_image.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="273.0" layoutY="258.0" text="Note" />
+      <TextField fx:id="note" layoutX="320.0" layoutY="254.0" />
+      <Button fx:id="btnValidateNote" layoutX="500.0" layoutY="254.0" mnemonicParsing="false" onMouseClicked="#GradeImage" text="Valider" />
+      <ListView fx:id="listViewImage" layoutX="40.0" layoutY="14.0" onMouseClicked="#ChangeImage" prefHeight="268.0" prefWidth="200.0" />
+      <Label fx:id="errorLabel" layoutX="540.0" layoutY="341.0" />
+   </children>
+</AnchorPane>
